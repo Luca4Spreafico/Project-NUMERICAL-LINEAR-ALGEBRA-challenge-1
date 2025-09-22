@@ -8,7 +8,6 @@ https://forms.office.com/e/GMvdV7bHrS
 
 GROUP ID: 9
 
-description:   
 
 10782110 Matilde Colombo
 
