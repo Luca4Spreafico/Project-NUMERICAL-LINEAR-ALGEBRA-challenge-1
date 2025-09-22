@@ -2,9 +2,7 @@
 #include <iostream>
 #include <cstdlib>
 
-// from https://github.com/nothings/stb/tree/master
 #define STB_IMAGE_IMPLEMENTATION
-
 #include "stb_image.h"
 
 #define STB_IMAGE_WRITE_IMPLEMENTATION
@@ -13,7 +11,7 @@
 using namespace Eigen;
 
 int main() {
-    const char* image_path = "uma.jpg";  // Path to your image
+    const char* image_path = "image/uma.jpg";  // Path to your image
 
     int width, height, channels;
     // Load image as greyscale (1 channel), width = number of columns, height = number of rows.
