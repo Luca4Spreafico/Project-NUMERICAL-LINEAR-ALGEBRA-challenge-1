@@ -14,4 +14,16 @@ description:
 10810895 Riccardo Donati
 
 
+How to download Eigen on our repository
+
+Go to the Eigen GitLab page for version 3.4.0:
+Eigen 3.4.0 release page
+ 
+about.gitlab.com
+
+On that page, there should be source archives you can download, like .tar.gz or .zip.
+
+Download the source archive.
+
+Unzip/untar it. Inside, you will find a folder named Eigen (and maybe other files like unsupported, CMakeLists.txt, etc.).
 
