@@ -56,6 +56,13 @@ build CMakeFiles/Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.dir/attempt1.cpp.o
   OBJECT_DIR = CMakeFiles\Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.dir
 
+build CMakeFiles/Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.dir/external/fe.cpp.obj: CXX_COMPILER__Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1_unscanned_Debug C$:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/external/fe.cpp || cmake_object_order_depends_target_Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1
+  DEP_FILE = CMakeFiles\Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.dir\external\fe.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/.
+  OBJECT_DIR = CMakeFiles\Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.dir\external
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1
@@ -64,7 +71,7 @@ build CMakeFiles/Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.dir/attempt1.cpp.o
 #############################################
 # Link the executable Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.exe
 
-build Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.exe: CXX_EXECUTABLE_LINKER__Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1_Debug CMakeFiles/Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.dir/attempt1.cpp.obj
+build Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.exe: CXX_EXECUTABLE_LINKER__Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1_Debug CMakeFiles/Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.dir/attempt1.cpp.obj CMakeFiles/Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.dir/external/fe.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.dir
