@@ -10,5 +10,4 @@ include_directories(${CMAKE_SOURCE_DIR}/external)
 
 add_executable(Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1
     attempt1.cpp
-        stb_image.h
 )
