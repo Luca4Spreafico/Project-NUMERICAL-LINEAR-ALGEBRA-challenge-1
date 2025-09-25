@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.exe"
+			"path" : "attempt1.exe"
 		},
 		{
-			"path" : "Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.pdb"
+			"path" : "attempt1.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -80,7 +80,7 @@
 			]
 		}
 	],
-	"id" : "Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1::@6890427a1f51a3e7e1df",
+	"id" : "attempt1::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -100,8 +100,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1",
-	"nameOnDisk" : "Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1.exe",
+	"name" : "attempt1",
+	"nameOnDisk" : "attempt1.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -130,7 +130,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "attempt1.cpp",
+			"path" : "richiesta1.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

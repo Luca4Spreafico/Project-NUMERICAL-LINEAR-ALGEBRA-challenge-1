@@ -8,8 +8,12 @@ include_directories(.)
 # Add include directories for headers (Eigen + stb_image inside external/)
 include_directories(${CMAKE_SOURCE_DIR}/external)
 
-add_executable(Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1
-    attempt1.cpp
+add_executable(attempt1
+    richiesta1.cpp
         external/stb_image.h
         external/stb_image_write.h
+)
+
+add_executable(hello
+       richiesta2.cpp
 )
