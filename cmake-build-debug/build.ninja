@@ -41,72 +41,38 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target attempt1
+# Object build statements for EXECUTABLE target Luke
 
 
 #############################################
-# Order-only phony target for attempt1
+# Order-only phony target for Luke
 
-build cmake_object_order_depends_target_attempt1: phony || .
+build cmake_object_order_depends_target_Luke: phony || .
 
-build CMakeFiles/attempt1.dir/richiesta1.cpp.obj: CXX_COMPILER__attempt1_unscanned_Debug C$:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/richiesta1.cpp || cmake_object_order_depends_target_attempt1
-  DEP_FILE = CMakeFiles\attempt1.dir\richiesta1.cpp.obj.d
+build CMakeFiles/Luke.dir/LukeChallenge1.cpp.obj: CXX_COMPILER__Luke_unscanned_Debug C$:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/LukeChallenge1.cpp || cmake_object_order_depends_target_Luke
+  DEP_FILE = CMakeFiles\Luke.dir\LukeChallenge1.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/. -IC:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/external
-  OBJECT_DIR = CMakeFiles\attempt1.dir
-  OBJECT_FILE_DIR = CMakeFiles\attempt1.dir
+  OBJECT_DIR = CMakeFiles\Luke.dir
+  OBJECT_FILE_DIR = CMakeFiles\Luke.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target attempt1
+# Link build statements for EXECUTABLE target Luke
 
 
 #############################################
-# Link the executable attempt1.exe
+# Link the executable Luke.exe
 
-build attempt1.exe: CXX_EXECUTABLE_LINKER__attempt1_Debug CMakeFiles/attempt1.dir/richiesta1.cpp.obj
+build Luke.exe: CXX_EXECUTABLE_LINKER__Luke_Debug CMakeFiles/Luke.dir/LukeChallenge1.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\attempt1.dir
+  OBJECT_DIR = CMakeFiles\Luke.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = attempt1.exe
-  TARGET_IMPLIB = libattempt1.dll.a
-  TARGET_PDB = attempt1.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target hello
-
-
-#############################################
-# Order-only phony target for hello
-
-build cmake_object_order_depends_target_hello: phony || .
-
-build CMakeFiles/hello.dir/richiesta2.cpp.obj: CXX_COMPILER__hello_unscanned_Debug C$:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/richiesta2.cpp || cmake_object_order_depends_target_hello
-  DEP_FILE = CMakeFiles\hello.dir\richiesta2.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/. -IC:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/external
-  OBJECT_DIR = CMakeFiles\hello.dir
-  OBJECT_FILE_DIR = CMakeFiles\hello.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target hello
-
-
-#############################################
-# Link the executable hello.exe
-
-build hello.exe: CXX_EXECUTABLE_LINKER__hello_Debug CMakeFiles/hello.dir/richiesta2.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\hello.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = hello.exe
-  TARGET_IMPLIB = libhello.dll.a
-  TARGET_PDB = hello.exe.dbg
+  TARGET_FILE = Luke.exe
+  TARGET_IMPLIB = libLuke.dll.a
+  TARGET_PDB = Luke.exe.dbg
 
 
 #############################################
@@ -134,9 +100,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build attempt1: phony attempt1.exe
-
-build hello: phony hello.exe
+build Luke: phony Luke.exe
 
 # =============================================================================
 # Folder targets.
@@ -146,7 +110,7 @@ build hello: phony hello.exe
 #############################################
 # Folder: C:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug
 
-build all: phony attempt1.exe hello.exe
+build all: phony Luke.exe
 
 # =============================================================================
 # Built-in targets

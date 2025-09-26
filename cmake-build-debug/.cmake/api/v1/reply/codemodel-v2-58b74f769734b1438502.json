@@ -15,8 +15,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -31,8 +30,7 @@
 					"name" : "Project_NUMERICAL_LINEAR_ALGEBRA_challenge_1",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -40,16 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "attempt1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-attempt1-Debug-31ddc5302d26bf017075.json",
-					"name" : "attempt1",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "hello::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-hello-Debug-1dc7507b2dc43d581bb3.json",
-					"name" : "hello",
+					"id" : "Luke::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Luke-Debug-d5f8ff5679ca0c31e1c9.json",
+					"name" : "Luke",
 					"projectIndex" : 0
 				}
 			]
