@@ -108,6 +108,40 @@ build girlsCode.exe: CXX_EXECUTABLE_LINKER__girlsCode_Debug CMakeFiles/girlsCode
   TARGET_IMPLIB = libgirlsCode.dll.a
   TARGET_PDB = girlsCode.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Lab3
+
+
+#############################################
+# Order-only phony target for Lab3
+
+build cmake_object_order_depends_target_Lab3: phony || .
+
+build CMakeFiles/Lab3.dir/Tutorial_Course/Lab3.cpp.obj: CXX_COMPILER__Lab3_unscanned_Debug C$:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/Tutorial_Course/Lab3.cpp || cmake_object_order_depends_target_Lab3
+  DEP_FILE = CMakeFiles\Lab3.dir\Tutorial_Course\Lab3.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/. -IC:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/external
+  OBJECT_DIR = CMakeFiles\Lab3.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab3.dir\Tutorial_Course
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Lab3
+
+
+#############################################
+# Link the executable Lab3.exe
+
+build Lab3.exe: CXX_EXECUTABLE_LINKER__Lab3_Debug CMakeFiles/Lab3.dir/Tutorial_Course/Lab3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Lab3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Lab3.exe
+  TARGET_IMPLIB = libLab3.dll.a
+  TARGET_PDB = Lab3.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -134,6 +168,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build Lab3: phony Lab3.exe
+
 build Luke: phony Luke.exe
 
 build girlsCode: phony girlsCode.exe
@@ -146,7 +182,7 @@ build girlsCode: phony girlsCode.exe
 #############################################
 # Folder: C:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug
 
-build all: phony Luke.exe girlsCode.exe
+build all: phony Luke.exe girlsCode.exe Lab3.exe
 
 # =============================================================================
 # Built-in targets

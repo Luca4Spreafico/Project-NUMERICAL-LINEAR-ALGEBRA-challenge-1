@@ -1,4 +1,5 @@
 C:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/Luke.dir
 C:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/girlsCode.dir
+C:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/Lab3.dir
 C:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

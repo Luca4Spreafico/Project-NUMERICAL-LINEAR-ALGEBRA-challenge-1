@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,12 +33,20 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Lab3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lab3-Debug-0c7e5a4a19936cec725a.json",
+					"name" : "Lab3",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Luke::@6890427a1f51a3e7e1df",

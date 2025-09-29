@@ -20,4 +20,10 @@ add_executable(girlsCode
         external/stb_image_write.h
 )
 
+add_executable(Lab3
+        Tutorial_Course/Lab3.cpp
+)
+
+
+
 
