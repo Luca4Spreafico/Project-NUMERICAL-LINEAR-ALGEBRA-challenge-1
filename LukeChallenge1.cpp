@@ -21,14 +21,12 @@ int main() {
     int width, height, channels;
     // Load image as greyscale (1 channel), width = number of columns, height = number of rows.
     unsigned char* data = stbi_load(image_path, &width, &height, &channels, 1);
-
     if (!data) {
         std::cerr << "Error: Could not load image " << image_path << std::endl;
         return 1;
     }
 
     std::cout << "Image loaded: " << width << "x" << height << std::endl;
-
     // Create Eigen matrix (rows = height, cols = width)
     Matrix<unsigned char, Dynamic, Dynamic, RowMajor> image_matrix(height, width);
 

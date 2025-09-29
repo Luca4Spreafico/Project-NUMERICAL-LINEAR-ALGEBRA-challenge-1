@@ -14,4 +14,10 @@ add_executable(Luke
         external/stb_image_write.h
 )
 
+add_executable(girlsCode
+        girlsCode.cpp
+        external/stb_image.h
+        external/stb_image_write.h
+)
+
 
