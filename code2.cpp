@@ -1,3 +1,4 @@
+#include <fstream>
 #include <iostream>
 #include <Eigen/Dense>
 #include <Eigen/Sparse>
@@ -6,6 +7,16 @@ using namespace Eigen;
 
 bool isSymmetric(const Eigen::MatrixXd& A) {
     return A.isApprox(A.transpose());
+}
+
+void writeMatrixMarket(const MatrixXd& mat, const std::string& filename) {
+    std::ofstream out(filename);
+    out << "%%MatrixMarket matrix array real general\n";
+    out << mat.rows() << " " << mat.cols() << "\n";
+    for (int j = 0; j < mat.cols(); ++j)
+        for (int i = 0; i < mat.rows(); ++i)
+            out << mat(i, j) << "\n";
+    out.close();
 }
 
 
@@ -26,7 +37,7 @@ int main() {
     Ag(8,4) = Ag(8,6) = Ag(8,7) = 1;
 
     // STAMPA della matrice Ag, DA ELIMINARE__________________________________
-    cout << "Matrice di adiacenza (Ag):\n" << Ag << "\n\n";
+    //cout << "Matrice di adiacenza (Ag):\n" << Ag << "\n\n";
 
     // RICHIESTA 1 --------------------
 
@@ -50,13 +61,15 @@ int main() {
     VectorXd x = VectorXd::Ones(N);
     VectorXd y = Lg*x;
     double euclidian_norm_y = y.norm();
-    std::cout << "y =  " << (y) << std::endl;
+    //std::cout << "y =  " << (y) << std::endl;
     std::cout << "euclidian_norm_y =  " << (euclidian_norm_y) << std::endl;
     std::cout << "Lg symmetric? " << (isSymmetric(Lg) ? "Yes" : "No") << std::endl;
 
     // THE NORM OF Y is 0???
     // this is behaving exactly as theory predicts. Short answer: y equals the zero vector
     // and its norm is 0 because the graph Laplacian always annihilates the all-ones vector
+
+    //___________________RICHIESTA 3_____________________________
 
     SelfAdjointEigenSolver<MatrixXd> es(Lg);
     if (es.info() == Success) {
@@ -84,7 +97,7 @@ int main() {
         cout << "Lg has a significant negative eigenvalue" << endl;
     //___________________________________________________________
 
-
+    writeMatrixMarket(Lg, "Lg.mtx");
 
 
 

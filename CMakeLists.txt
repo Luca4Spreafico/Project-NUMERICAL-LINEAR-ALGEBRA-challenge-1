@@ -8,20 +8,13 @@ set(LIS_ROOT "\\\\wsl.localhost\\Ubuntu\\home\\luke\\lis-2.1.10")
 include_directories("${LIS_ROOT}/include")
 link_directories("${LIS_ROOT}/lib")
 
+find_package(MPI REQUIRED)
+include_directories(${MPI_INCLUDE_PATH})
+
+
 # Add include directories for headers (Eigen + stb_image inside external/)
 include_directories(${CMAKE_SOURCE_DIR}/external)
 
-#add_executable(Luke
-#    LukeChallenge1.cpp
-#        external/stb_image.h
-#        external/stb_image_write.h
-#)
-
-#add_executable(girlsCode
- #       girlsCode.cpp
- #       external/stb_image.h
- #       external/stb_image_write.h
-#)
 
 add_executable(Lab3
         Tutorial_Course/Lab3.cpp
@@ -35,7 +28,7 @@ add_executable(code2
         code2.cpp
 )
 
-
+target_link_libraries(code2 MPI::MPI_CXX)
 
 
 

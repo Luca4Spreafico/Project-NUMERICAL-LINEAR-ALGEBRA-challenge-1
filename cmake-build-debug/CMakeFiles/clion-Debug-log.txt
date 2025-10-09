@@ -1,4 +1,4 @@
 /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -S /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1 -B /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug
--- Configuring done (0.1s)
+-- Configuring done (5.9s)
 -- Generating done (0.8s)
 -- Build files have been written to: /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug

@@ -92,6 +92,8 @@ code2_EXTERNAL_OBJECTS =
 
 code2: CMakeFiles/code2.dir/code2.cpp.o
 code2: CMakeFiles/code2.dir/build.make
+code2: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so
+code2: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
 code2: CMakeFiles/code2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable code2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/code2.dir/link.txt --verbose=$(VERBOSE)
