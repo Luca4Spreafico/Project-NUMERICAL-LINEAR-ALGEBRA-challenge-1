@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/jacobi.dir/jacobi.cpp.o -o jacobi   -L//wsl.localhost/Ubuntu/home/luke/lis-2.1.10/lib
