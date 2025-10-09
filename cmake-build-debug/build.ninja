@@ -142,6 +142,40 @@ build Lab3.exe: CXX_EXECUTABLE_LINKER__Lab3_Debug CMakeFiles/Lab3.dir/Tutorial_C
   TARGET_IMPLIB = libLab3.dll.a
   TARGET_PDB = Lab3.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target jacobi
+
+
+#############################################
+# Order-only phony target for jacobi
+
+build cmake_object_order_depends_target_jacobi: phony || .
+
+build CMakeFiles/jacobi.dir/jacobi.cpp.obj: CXX_COMPILER__jacobi_unscanned_Debug C$:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/jacobi.cpp || cmake_object_order_depends_target_jacobi
+  DEP_FILE = CMakeFiles\jacobi.dir\jacobi.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/. -IC:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/external
+  OBJECT_DIR = CMakeFiles\jacobi.dir
+  OBJECT_FILE_DIR = CMakeFiles\jacobi.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target jacobi
+
+
+#############################################
+# Link the executable jacobi.exe
+
+build jacobi.exe: CXX_EXECUTABLE_LINKER__jacobi_Debug CMakeFiles/jacobi.dir/jacobi.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\jacobi.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = jacobi.exe
+  TARGET_IMPLIB = libjacobi.dll.a
+  TARGET_PDB = jacobi.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -174,6 +208,8 @@ build Luke: phony Luke.exe
 
 build girlsCode: phony girlsCode.exe
 
+build jacobi: phony jacobi.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -182,7 +218,7 @@ build girlsCode: phony girlsCode.exe
 #############################################
 # Folder: C:/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug
 
-build all: phony Luke.exe girlsCode.exe Lab3.exe
+build all: phony Luke.exe girlsCode.exe Lab3.exe jacobi.exe
 
 # =============================================================================
 # Built-in targets

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Luke.dir/LukeChallenge1.cpp.o -o Luke   -L//wsl.localhost/Ubuntu/home/luke/lis-2.1.10/lib
