@@ -9,13 +9,34 @@ bool isSymmetric(const Eigen::MatrixXd& A) {
     return A.isApprox(A.transpose());
 }
 
-void writeMatrixMarket(const MatrixXd& mat, const std::string& filename) {
+void saveMatrix(const MatrixXd& mat, const std::string& filename) {
     std::ofstream out(filename);
     out << "%%MatrixMarket matrix array real general\n";
     out << mat.rows() << " " << mat.cols() << "\n";
     for (int j = 0; j < mat.cols(); ++j)
         for (int i = 0; i < mat.rows(); ++i)
             out << mat(i, j) << "\n";
+    out.close();
+}
+
+void saveMatrixAsLis(const MatrixXd& mat, const std::string& filename) {
+    std::ofstream out(filename);
+    int nnz = 0;
+
+    // Count non-zero entries
+    for (int i = 0; i < mat.rows(); ++i)
+        for (int j = 0; j < mat.cols(); ++j)
+            if (mat(i,j) != 0.0) nnz++;
+
+    // Header: rows cols nnz
+    out << mat.rows() << " " << mat.cols() << " " << nnz << "\n";
+
+    // Write row_index col_index value (1-based)
+    for (int i = 0; i < mat.rows(); ++i)
+        for (int j = 0; j < mat.cols(); ++j)
+            if (mat(i,j) != 0.0)
+                out << (i+1) << " " << (j+1) << " " << mat(i,j) << "\n";
+
     out.close();
 }
 
@@ -97,13 +118,10 @@ int main() {
         cout << "Lg has a significant negative eigenvalue" << endl;
     //___________________________________________________________
 
-    writeMatrixMarket(Lg, "Lg.mtx");
-
-
-
-
-
-
+    /// ATTENZIONE________________ Lg.mtx si trova nella cartella cmake-biuld-debug
+    saveMatrixAsLis(Lg, "Lg.lis");
+    //compile :    mpicc -DUSE_MPI -I$HOME/lis-install/include etest1.c -L$HOME/lis-install/lib -llis -lm -lpthread -o eigen1
+    // run:    mpirun -n 4 ./eigen1 Lg.lis eigvec.txt hist.txt -e pi
 
     return 0;
 }

@@ -33,6 +33,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake"
   "/usr/share/cmake-3.29/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.29/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/eigen3/cmake/Eigen3Config.cmake"
+  "/usr/share/eigen3/cmake/Eigen3ConfigVersion.cmake"
+  "/usr/share/eigen3/cmake/Eigen3Targets.cmake"
   )
 
 # The corresponding makefile is:
@@ -48,7 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Lab3.dir/DependInfo.cmake"
-  "CMakeFiles/jacobi.dir/DependInfo.cmake"
   "CMakeFiles/code2.dir/DependInfo.cmake"
   )

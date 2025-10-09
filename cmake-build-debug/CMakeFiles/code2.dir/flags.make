@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I//wsl.localhost/Ubuntu/home/luke/lis-2.1.10/include -I/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/external -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+CXX_INCLUDES = -I//wsl.localhost/Ubuntu/home/luke/lis-2.1.10/include -I/usr/include/eigen3 -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
 
 CXX_FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
 

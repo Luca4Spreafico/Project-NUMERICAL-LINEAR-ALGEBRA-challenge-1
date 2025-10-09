@@ -117,32 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Lab3
-
-# Build rule for target.
-Lab3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lab3
-.PHONY : Lab3
-
-# fast build rule for target.
-Lab3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/build
-.PHONY : Lab3/fast
-
-#=============================================================================
-# Target rules for targets named jacobi
-
-# Build rule for target.
-jacobi: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 jacobi
-.PHONY : jacobi
-
-# fast build rule for target.
-jacobi/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jacobi.dir/build.make CMakeFiles/jacobi.dir/build
-.PHONY : jacobi/fast
-
-#=============================================================================
 # Target rules for targets named code2
 
 # Build rule for target.
@@ -154,30 +128,6 @@ code2: cmake_check_build_system
 code2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/build
 .PHONY : code2/fast
-
-Tutorial_Course/Lab3.o: Tutorial_Course/Lab3.cpp.o
-.PHONY : Tutorial_Course/Lab3.o
-
-# target to build an object file
-Tutorial_Course/Lab3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/Tutorial_Course/Lab3.cpp.o
-.PHONY : Tutorial_Course/Lab3.cpp.o
-
-Tutorial_Course/Lab3.i: Tutorial_Course/Lab3.cpp.i
-.PHONY : Tutorial_Course/Lab3.i
-
-# target to preprocess a source file
-Tutorial_Course/Lab3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/Tutorial_Course/Lab3.cpp.i
-.PHONY : Tutorial_Course/Lab3.cpp.i
-
-Tutorial_Course/Lab3.s: Tutorial_Course/Lab3.cpp.s
-.PHONY : Tutorial_Course/Lab3.s
-
-# target to generate assembly for a file
-Tutorial_Course/Lab3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/Tutorial_Course/Lab3.cpp.s
-.PHONY : Tutorial_Course/Lab3.cpp.s
 
 code2.o: code2.cpp.o
 .PHONY : code2.o
@@ -203,30 +153,6 @@ code2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/code2.cpp.s
 .PHONY : code2.cpp.s
 
-jacobi.o: jacobi.cpp.o
-.PHONY : jacobi.o
-
-# target to build an object file
-jacobi.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jacobi.dir/build.make CMakeFiles/jacobi.dir/jacobi.cpp.o
-.PHONY : jacobi.cpp.o
-
-jacobi.i: jacobi.cpp.i
-.PHONY : jacobi.i
-
-# target to preprocess a source file
-jacobi.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jacobi.dir/build.make CMakeFiles/jacobi.dir/jacobi.cpp.i
-.PHONY : jacobi.cpp.i
-
-jacobi.s: jacobi.cpp.s
-.PHONY : jacobi.s
-
-# target to generate assembly for a file
-jacobi.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jacobi.dir/build.make CMakeFiles/jacobi.dir/jacobi.cpp.s
-.PHONY : jacobi.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -235,18 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Lab3"
 	@echo "... code2"
-	@echo "... jacobi"
-	@echo "... Tutorial_Course/Lab3.o"
-	@echo "... Tutorial_Course/Lab3.i"
-	@echo "... Tutorial_Course/Lab3.s"
 	@echo "... code2.o"
 	@echo "... code2.i"
 	@echo "... code2.s"
-	@echo "... jacobi.o"
-	@echo "... jacobi.i"
-	@echo "... jacobi.s"
 .PHONY : help
 
 

@@ -63,8 +63,6 @@ CMAKE_BINARY_DIR = /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALG
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Lab3.dir/all
-all: CMakeFiles/jacobi.dir/all
 all: CMakeFiles/code2.dir/all
 .PHONY : all
 
@@ -73,62 +71,8 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Lab3.dir/clean
-clean: CMakeFiles/jacobi.dir/clean
 clean: CMakeFiles/code2.dir/clean
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/Lab3.dir
-
-# All Build rule for target.
-CMakeFiles/Lab3.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Lab3"
-.PHONY : CMakeFiles/Lab3.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Lab3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Lab3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Lab3.dir/rule
-
-# Convenience name for target.
-Lab3: CMakeFiles/Lab3.dir/rule
-.PHONY : Lab3
-
-# clean rule for target.
-CMakeFiles/Lab3.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/clean
-.PHONY : CMakeFiles/Lab3.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/jacobi.dir
-
-# All Build rule for target.
-CMakeFiles/jacobi.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jacobi.dir/build.make CMakeFiles/jacobi.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jacobi.dir/build.make CMakeFiles/jacobi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target jacobi"
-.PHONY : CMakeFiles/jacobi.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/jacobi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/jacobi.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/jacobi.dir/rule
-
-# Convenience name for target.
-jacobi: CMakeFiles/jacobi.dir/rule
-.PHONY : jacobi
-
-# clean rule for target.
-CMakeFiles/jacobi.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/jacobi.dir/build.make CMakeFiles/jacobi.dir/clean
-.PHONY : CMakeFiles/jacobi.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/code2.dir
@@ -137,7 +81,7 @@ CMakeFiles/jacobi.dir/clean:
 CMakeFiles/code2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/code2.dir/build.make CMakeFiles/code2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target code2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target code2"
 .PHONY : CMakeFiles/code2.dir/all
 
 # Build rule for subdir invocation for target.

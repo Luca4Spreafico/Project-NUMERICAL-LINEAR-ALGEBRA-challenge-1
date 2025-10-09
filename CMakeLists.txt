@@ -11,24 +11,20 @@ link_directories("${LIS_ROOT}/lib")
 find_package(MPI REQUIRED)
 include_directories(${MPI_INCLUDE_PATH})
 
+find_package(Eigen3 REQUIRED)
+include_directories(${EIGEN3_INCLUDE_DIR})
+
 
 # Add include directories for headers (Eigen + stb_image inside external/)
-include_directories(${CMAKE_SOURCE_DIR}/external)
-
-
-add_executable(Lab3
-        Tutorial_Course/Lab3.cpp
-)
-
-add_executable(jacobi
-        jacobi.cpp
-)
+#include_directories(${CMAKE_SOURCE_DIR}/external)
 
 add_executable(code2
         code2.cpp
 )
 
 target_link_libraries(code2 MPI::MPI_CXX)
+# Link LIS library
+
 
 
 

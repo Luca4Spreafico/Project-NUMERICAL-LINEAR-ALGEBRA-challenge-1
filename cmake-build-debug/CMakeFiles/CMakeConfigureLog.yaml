@@ -1002,3 +1002,524 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GATYb0"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GATYb0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GATYb0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1c925/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1c925.dir/build.make CMakeFiles/cmTC_1c925.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GATYb0'
+        Building C object CMakeFiles/cmTC_1c925.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_1c925.dir/test_mpi.c.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GATYb0/test_mpi.c
+        Linking C executable cmTC_1c925
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c925.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_1c925.dir/test_mpi.c.o -o cmTC_1c925  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GATYb0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xBnx39"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xBnx39"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xBnx39'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bffd1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bffd1.dir/build.make CMakeFiles/cmTC_bffd1.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xBnx39'
+        Building CXX object CMakeFiles/cmTC_bffd1.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_bffd1.dir/test_mpi.cpp.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xBnx39/test_mpi.cpp
+        Linking CXX executable cmTC_bffd1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bffd1.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_bffd1.dir/test_mpi.cpp.o -o cmTC_bffd1  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xBnx39'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vDO3oY"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vDO3oY"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vDO3oY'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_adc2a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_adc2a.dir/build.make CMakeFiles/cmTC_adc2a.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vDO3oY'
+        Building CXX object CMakeFiles/cmTC_adc2a.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_adc2a.dir/test_mpi.cpp.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vDO3oY/test_mpi.cpp
+        Linking CXX executable cmTC_adc2a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adc2a.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_adc2a.dir/test_mpi.cpp.o -o cmTC_adc2a  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vDO3oY'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nHmmYA"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nHmmYA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nHmmYA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_12516/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_12516.dir/build.make CMakeFiles/cmTC_12516.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nHmmYA'
+        Building C object CMakeFiles/cmTC_12516.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_12516.dir/test_mpi.c.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nHmmYA/test_mpi.c
+        Linking C executable cmTC_12516
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12516.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_12516.dir/test_mpi.c.o -o cmTC_12516  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nHmmYA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MLbk5k"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MLbk5k"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MLbk5k'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_92894/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_92894.dir/build.make CMakeFiles/cmTC_92894.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MLbk5k'
+        Building CXX object CMakeFiles/cmTC_92894.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_92894.dir/test_mpi.cpp.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MLbk5k/test_mpi.cpp
+        Linking CXX executable cmTC_92894
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92894.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_92894.dir/test_mpi.cpp.o -o cmTC_92894  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MLbk5k'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IeqV8h"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IeqV8h"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IeqV8h'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_80923/fast
+        gmake: Warning: File 'Makefile' has modification time 0.11 s in the future
+        /usr/bin/gmake  -f CMakeFiles/cmTC_80923.dir/build.make CMakeFiles/cmTC_80923.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IeqV8h'
+        gmake[1]: Warning: File 'CMakeFiles/cmTC_80923.dir/flags.make' has modification time 0.065 s in the future
+        Building CXX object CMakeFiles/cmTC_80923.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_80923.dir/test_mpi.cpp.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IeqV8h/test_mpi.cpp
+        Linking CXX executable cmTC_80923
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80923.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_80923.dir/test_mpi.cpp.o -o cmTC_80923  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IeqV8h'
+        gmake: warning:  Clock skew detected.  Your build may be incomplete.
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qb8LDA"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qb8LDA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qb8LDA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ac3d7/fast
+        gmake: Warning: File 'Makefile' has modification time 0.12 s in the future
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ac3d7.dir/build.make CMakeFiles/cmTC_ac3d7.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qb8LDA'
+        gmake[1]: Warning: File 'CMakeFiles/cmTC_ac3d7.dir/flags.make' has modification time 0.087 s in the future
+        Building C object CMakeFiles/cmTC_ac3d7.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_ac3d7.dir/test_mpi.c.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qb8LDA/test_mpi.c
+        Linking C executable cmTC_ac3d7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac3d7.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_ac3d7.dir/test_mpi.c.o -o cmTC_ac3d7  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qb8LDA'
+        gmake: warning:  Clock skew detected.  Your build may be incomplete.
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yL1Lf2"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yL1Lf2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yL1Lf2'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c55d8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c55d8.dir/build.make CMakeFiles/cmTC_c55d8.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yL1Lf2'
+        gmake[1]: Warning: File 'CMakeFiles/cmTC_c55d8.dir/progress.make' has modification time 0.037 s in the future
+        Building CXX object CMakeFiles/cmTC_c55d8.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_c55d8.dir/test_mpi.cpp.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yL1Lf2/test_mpi.cpp
+        Linking CXX executable cmTC_c55d8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c55d8.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_c55d8.dir/test_mpi.cpp.o -o cmTC_c55d8  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yL1Lf2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-siDGhv"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-siDGhv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-siDGhv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_44e1b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_44e1b.dir/build.make CMakeFiles/cmTC_44e1b.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-siDGhv'
+        Building CXX object CMakeFiles/cmTC_44e1b.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_44e1b.dir/test_mpi.cpp.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-siDGhv/test_mpi.cpp
+        Linking CXX executable cmTC_44e1b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44e1b.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_44e1b.dir/test_mpi.cpp.o -o cmTC_44e1b  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-siDGhv'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JCvHCA"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JCvHCA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JCvHCA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3c4a7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3c4a7.dir/build.make CMakeFiles/cmTC_3c4a7.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JCvHCA'
+        Building C object CMakeFiles/cmTC_3c4a7.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_3c4a7.dir/test_mpi.c.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JCvHCA/test_mpi.c
+        Linking C executable cmTC_3c4a7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c4a7.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_3c4a7.dir/test_mpi.c.o -o cmTC_3c4a7  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JCvHCA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rymWRq"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rymWRq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rymWRq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f24a4/fast
+        gmake: Warning: File 'Makefile' has modification time 0.18 s in the future
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f24a4.dir/build.make CMakeFiles/cmTC_f24a4.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rymWRq'
+        gmake[1]: Warning: File 'CMakeFiles/cmTC_f24a4.dir/flags.make' has modification time 0.13 s in the future
+        Building CXX object CMakeFiles/cmTC_f24a4.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_f24a4.dir/test_mpi.cpp.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rymWRq/test_mpi.cpp
+        Linking CXX executable cmTC_f24a4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f24a4.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_f24a4.dir/test_mpi.cpp.o -o cmTC_f24a4  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rymWRq'
+        gmake: warning:  Clock skew detected.  Your build may be incomplete.
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mlj3ar"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mlj3ar"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mlj3ar'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5c3c8/fast
+        gmake: Warning: File 'Makefile' has modification time 0.028 s in the future
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5c3c8.dir/build.make CMakeFiles/cmTC_5c3c8.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mlj3ar'
+        gmake[1]: Warning: File 'CMakeFiles/cmTC_5c3c8.dir/progress.make' has modification time 0.12 s in the future
+        Building CXX object CMakeFiles/cmTC_5c3c8.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_5c3c8.dir/test_mpi.cpp.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mlj3ar/test_mpi.cpp
+        Linking CXX executable cmTC_5c3c8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c3c8.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_5c3c8.dir/test_mpi.cpp.o -o cmTC_5c3c8  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mlj3ar'
+        gmake: warning:  Clock skew detected.  Your build may be incomplete.
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6mb2ga"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6mb2ga"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6mb2ga'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_508f9/fast
+        gmake: Warning: File 'Makefile' has modification time 0.017 s in the future
+        /usr/bin/gmake  -f CMakeFiles/cmTC_508f9.dir/build.make CMakeFiles/cmTC_508f9.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6mb2ga'
+        gmake[1]: Warning: File 'CMakeFiles/cmTC_508f9.dir/progress.make' has modification time 0.051 s in the future
+        Building C object CMakeFiles/cmTC_508f9.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_508f9.dir/test_mpi.c.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6mb2ga/test_mpi.c
+        Linking C executable cmTC_508f9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_508f9.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_508f9.dir/test_mpi.c.o -o cmTC_508f9  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6mb2ga'
+        gmake: warning:  Clock skew detected.  Your build may be incomplete.
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-43uKre"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-43uKre"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-43uKre'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_277d1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_277d1.dir/build.make CMakeFiles/cmTC_277d1.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-43uKre'
+        gmake[1]: Warning: File 'CMakeFiles/cmTC_277d1.dir/progress.make' has modification time 0.01 s in the future
+        Building CXX object CMakeFiles/cmTC_277d1.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_277d1.dir/test_mpi.cpp.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-43uKre/test_mpi.cpp
+        Linking CXX executable cmTC_277d1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_277d1.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_277d1.dir/test_mpi.cpp.o -o cmTC_277d1  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-43uKre'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.29/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j27mgo"
+      binary: "/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j27mgo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j27mgo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6c7b2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6c7b2.dir/build.make CMakeFiles/cmTC_6c7b2.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j27mgo'
+        gmake[1]: Warning: File 'CMakeFiles/cmTC_6c7b2.dir/progress.make' has modification time 0.0042 s in the future
+        Building CXX object CMakeFiles/cmTC_6c7b2.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/cmTC_6c7b2.dir/test_mpi.cpp.o -c /mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j27mgo/test_mpi.cpp
+        Linking CXX executable cmTC_6c7b2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c7b2.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_6c7b2.dir/test_mpi.cpp.o -o cmTC_6c7b2  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[1]: Leaving directory '/mnt/c/Users/lukeg/CLionProjects/Project-NUMERICAL-LINEAR-ALGEBRA-challenge-1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-j27mgo'
+        
+      exitCode: 0
+...
